@@ -82,19 +82,19 @@ movies = [
     "imdb": 4.2,
     "category": "Thriller"
   },
-  
+
   {
     "name": "We Two",
     "imdb": 7.2,
     "category": "Romance"
   }
-]
-
+  ]
 def is_imdb_above_5_5(movie):
     return movie["imdb"] > 5.5
 
 def filter_movies_above_5_5(movies):
     return [movie for movie in movies if movie["imdb"] > 5.5]
+print(filter_movies_above_5_5(movies))
 
 def filter_movies_by_category(movies, category):
     return [movie for movie in movies if movie["category"] == category]
